@@ -42,7 +42,9 @@ namespace SeBlog
         {
             // checkout https://developer.github.com/v3/repos/contents/#custom-media-types with strategy to replace it
             var orderedPosts = PostLists.TitleToFile.OrderByDescending(title => title.Key);
-            foreach (var (postTitle, fileUrl) in orderedPosts) Posts.Add(await LoadPostByTitle(postTitle, fileUrl));
+
+            foreach (var (postTitle, fileUrl) in orderedPosts) 
+                Posts.Add(await LoadPostByTitle(postTitle, fileUrl));
         }
 
         private async Task<Post> LoadPostByTitle(string postKey, string fileUrl)

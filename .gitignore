@@ -3,3 +3,6 @@ obj/
 /packages/
 riderModule.iml
 /_ReSharper.Caches/
+.vs/SeBlog/v17/.futdcache.v1
+.vs/SeBlog/DesignTimeBuild/.dtbcache.v2
+.vs/VSWorkspaceState.json
